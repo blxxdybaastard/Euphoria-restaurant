@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRUASSANOV | Coffee & Bakery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-900 text-stone-100 font-sans antialiased selection:bg-amber-500 selection:text-stone-900">
+
+    <!-- НАВИГАЦИЯ -->
+    <header class="sticky top-0 z-50 bg-stone-950/80 backdrop-blur-md border-b border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-black tracking-widest text-amber-400">KRUASSANOV</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wider uppercase text-stone-300">
+                <a href="#about" class="hover:text-amber-400 transition-colors">О нас</a>
+                <a href="#features" class="hover:text-amber-400 transition-colors">Особенности</a>
+                <a href="#menu" class="hover:text-amber-400 transition-colors">Меню</a>
+                <a href="#contacts" class="hover:text-amber-400 transition-colors">Контакты</a>
+            </nav>
+            <a href="#contacts" class="border border-amber-400/30 bg-amber-400/10 text-amber-400 hover:bg-amber-400 hover:text-stone-950 px-5 py-2 rounded-full text-sm font-semibold tracking-wide transition-all duration-300">
+                Где мы?
+            </a>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="relative min-h-[calc(100vh-5rem)] flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-stone-800 via-stone-900 to-stone-950 overflow-hidden px-4">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=2070')] bg-cover bg-center opacity-10 pointer-events-none"></div>
+        <div class="relative z-10 text-center max-w-3xl mx-auto">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-3 block">Coffee & Bakery</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-stone-100 via-amber-200 to-stone-100 bg-clip-text text-transparent">
+                KRUASSANOV
+            </h1>
+            <p class="text-lg md:text-xl text-stone-400 font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+                Свежая выпечка, хрустящие круассаны и исключительный кофе для идеального начала твоего дня.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#menu" class="bg-amber-400 text-stone-950 font-bold px-8 py-4 rounded-xl shadow-lg shadow-amber-400/20 hover:bg-amber-300 hover:-translate-y-0.5 transition-all duration-300">
+                    Открыть меню
+                </a>
+                <a href="#about" class="bg-stone-800 hover:bg-stone-700 text-stone-200 border border-stone-700 font-semibold px-8 py-4 rounded-xl hover:-translate-y-0.5 transition-all duration-300">
+                    Подробнее
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О НАС -->
+    <section id="about" class="py-24 max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="w-12 h-1 bg-amber-400"></div>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Атмосфера уюта и тепла</h2>
+                <p class="text-stone-400 leading-relaxed">
+                    KRUASSANOV — это место, куда приходят за настоящим, ароматным кофе и горячей выпечкой. Мы создали идеальное пространство как для быстрого перекуса, так и для душевных встреч в большой компании.
+                </p>
+            </div>
+            <div class="relative group">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047" alt="Кофейня" class="relative rounded-2xl border border-stone-800 object-cover w-full h-80 md:h-[400px]">
+            </div>
+        </div>
+    </section>
+
+    <!-- ОСОБЕННОСТИ (ИЗ СКРИНШОТОВ) -->
+    <section id="features" class="py-20 bg-stone-950/50 border-y border-stone-800/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-stone-900 rounded-xl border border-stone-800 text-center">
+                    <div class="text-amber-400 text-2xl mb-3"><i class="fas fa-coffee"></i></div>
+                    <h3 class="font-semibold text-sm uppercase tracking-wider">Хороший кофе</h3>
+                </div>
+                <div class="p-6 bg-stone-900 rounded-xl border border-stone-800 text-center">
+                    <div class="text-amber-400 text-2xl mb-3"><i class="fas fa-bolt"></i></div>
+                    <h3 class="font-semibold text-sm uppercase tracking-wider">Быстрый перекус</h3>
+                </div>
+                <div class="p-6 bg-stone-900 rounded-xl border border-stone-800 text-center">
+                    <div class="text-amber-400 text-2xl mb-3"><i class="fas fa-users"></i></div>
+                    <h3 class="font-semibold text-sm uppercase tracking-wider">Большие компании</h3>
+                </div>
+                <div class="p-6 bg-stone-900 rounded-xl border border-stone-800 text-center">
+                    <div class="text-amber-400 text-2xl mb-3"><i class="fas fa-parking"></i></div>
+                    <h3 class="font-semibold text-sm uppercase tracking-wider">Бесплатная парковка</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- МЕНЮ -->
+    <section id="menu" class="py-24 bg-stone-950 border-b border-stone-800/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Меню кофейни</h2>
+                <p class="text-stone-400 text-sm">Выпечка и согревающие напитки</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Элемент 1 -->
+                <div class="flex justify-between items-start p-4 hover:bg-stone-900 rounded-xl transition-colors border border-transparent hover:border-stone-800">
+                    <div>
+                        <h3 class="text-lg font-semibold text-amber-400">Классический круассан</h3>
+                        <p class="text-stone-400 text-sm mt-1">Воздушное слоеное тесто на сливочном масле.</p>
+                    </div>
+                    <span class="text-amber-400 font-bold ml-4 text-lg">-- TMT</span>
+                </div>
+                <!-- Элемент 2 -->
+                <div class="flex justify-between items-start p-4 hover:bg-stone-900 rounded-xl transition-colors border border-transparent hover:border-stone-800">
+                    <div>
+                        <h3 class="text-lg font-semibold text-amber-400">Фирменный Капучино</h3>
+                        <p class="text-stone-400 text-sm mt-1">Плотная молочная пенка и стопроцентная арабика.</p>
+                    </div>
+                    <span class="text-amber-400 font-bold ml-4 text-lg">-- TMT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" class="py-24 max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Ждем вас в гости</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center text-amber-400">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span class="text-stone-300">Бюзмейин, Cafe Park (KRUASSANOV)</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center text-amber-400">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <span class="text-stone-300">Подходит для детей • Поесть в одиночку</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 border-t border-stone-800 text-center py-8 text-sm text-stone-500">
+        <p>&copy; 2026 KRUASSANOV coffee and bakery. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
